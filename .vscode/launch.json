@@ -5,16 +5,30 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(Windows) 启动",
+            "name": "(Windows) debug 启动",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "输入程序名称，例如 ${workspaceFolder}/a.exe",
+            "program": "E:/project/3d/3d_model_color_deal/build/Debug/main.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
-            "environment": [],
-            "console": "externalTerminal"
-        }
-
+            "console": "externalTerminal",
+            "env": {
+                "path": "D:/osg_pre_build/OpenSceneGraph-3.6.5-VC2022-64-Debug-2023-01/bin;%path%;"
+            }
+        },
+        {
+            "name": "(Windows) release 启动",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "E:/project/3d/3d_model_color_deal/build/Release/main.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "console": "externalTerminal",
+            "env": {
+                "path": "D:/osg_pre_build/OpenSceneGraph-3.6.5-VC2022-64-Release-2023-01/bin;%path%;"
+            }
+        },
     ]
 }
